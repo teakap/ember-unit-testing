@@ -2,7 +2,7 @@ export default function () {
 
   this.namespace = 'api';
 
-  this.get('/movies', (schema, request) => {
+  this.get('/movies', (schema) => {
     return schema.movies.all();
   });
   /*
