@@ -2,12 +2,8 @@ export default function () {
 
   this.namespace = 'api';
 
-  this.get('/users', (schema) => {
-    return schema.users.all();
-  });
-  this.get('/todos', (schema) => {
-    return schema.todos.all();
-  });
+  this.get('/users');
+  this.get('/todos');
   /*
     Config (with defaults).
 
