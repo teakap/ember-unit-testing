@@ -5,6 +5,9 @@ export default function () {
   this.get('/users', (schema) => {
     return schema.users.all();
   });
+  this.get('/todos', (schema) => {
+    return schema.todos.all();
+  });
   /*
     Config (with defaults).
 

@@ -1,6 +1,9 @@
 <ol>
   {{log 'model' model}}
-  {{#each model.data as |user|}}
+  {{#each model.users.data as |user|}}
     <li>{{user.attributes.first-name}} {{user.attributes.last-name}} </li>
   {{/each}}
+  {{todo-list
+    todos=model.todos.data
+  }}
 </ol>
